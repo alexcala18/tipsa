@@ -3,6 +3,7 @@ import tipsaTracking from "./tipsa-service.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+console.log("PORT env:", process.env.PORT);
 
 app.get("/tracking/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
